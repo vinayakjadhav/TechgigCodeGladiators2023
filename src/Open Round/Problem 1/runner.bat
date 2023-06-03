@@ -1,2 +1,2 @@
-node worldArmy.js < input1.txt
+node forestFire.js < input1.txt
 cmd /k echo "Finished"
