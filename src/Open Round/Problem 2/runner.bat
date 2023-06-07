@@ -1,2 +1,2 @@
-node gifts.js < input1.txt
+node theMagicWand.js < input1.txt
 cmd /k echo "Finished"

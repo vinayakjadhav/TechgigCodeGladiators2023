@@ -12,14 +12,14 @@ process.stdin.on('data', function(data) {
 
 process.stdin.on('end', function() {
   input_stdin_array = input_stdin.split("\r\n");
-  console.log(input_stdin_array);
+  // console.log(input_stdin_array);
 
   //Write code here
   var numberOfAnimals = input_stdin_array[0].split(" ")[0];
   var capacityForTransport = input_stdin_array[0].split(" ")[1];
   var engeryLevelsOfAnimals = input_stdin_array[1].split(" ");
 
-  minimumEnergyLevel = -1;
+  var minimumEnergyLevel = -1;
   engeryLevelsOfAnimals.sort((a,b)=>a-b);
 
   engeryLevelsOfAnimals.forEach((item, i) => {
