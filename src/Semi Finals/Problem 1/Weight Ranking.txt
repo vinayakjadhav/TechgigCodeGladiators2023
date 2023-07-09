@@ -1,0 +1,61 @@
+Stop the Shame (100 Marks)
+The general public often body shame the people who are obese or not beautiful as per their standard of weight. They do not even consider that it might be a medical condition for some people. Because of this, the people start doubting themselves and start cutting them off from the general discussions or the public places. To fight body shaming and spread awareness about the issue, an event is conducted in the city where people are participating and are ranked according to their weights from highest to lowest. The people with the same weights are ranked the same.
+
+
+There are N people who have already participated. The official has noted their weight and has ranked them. The problem is, he has fallen sick and there are still P people who are left to rank and participate. Considering this, you are expected to finish the process and provide the rank of the P people. Once the person is ranked, his weight is included in the category and the weight of the new person will have to consider this weight also to be ranked. To help you out, the new P people are organized in a queue in increasing order of their weights.
+
+
+Example:
+
+N = 5
+
+Weight and Rank of N people = { 120, 100, 100, 90, 60 }
+
+
+Number of people still left to participate, P = 3
+
+Weight of P people = { 40, 40, 80 }
+
+Image: ranking.png
+
+Rank of the person P1 with weight = 40
+
+Rank of the person P2 with weight = 40
+
+Rank of the person P3 with weight = 80
+
+
+Complete the process and rank the P people according to their weights. The event will be successful only after all the people are ranked accordingly.
+
+
+Input Format
+The first line of input consists of two space-separated integers, N and P, number of people already ranked and number of people left to be ranked respectively.
+The second line of input consists of N space-separated integers arranged in decreasing order, representing the weight of the N people.
+The third line of input consists of P space-separated integers arranged in increasing order, representing the weight of the P people.
+
+Constraints
+1<= N, P <=10^5
+0<= Ni, Pi <=10^9
+
+Output Format
+Print the rank of the Pi person at the given time in a separate line.
+
+Sample TestCase 1
+Input
+5 3
+120 100 100 90 60
+40 40 80
+Output
+5
+5
+4
+Explanation
+As explained in the example.
+
+Time Limit(X):
+0.50 sec(s) for each input.
+Memory Limit:
+512 MB
+Source Limit:
+100 KB
+Allowed Languages
