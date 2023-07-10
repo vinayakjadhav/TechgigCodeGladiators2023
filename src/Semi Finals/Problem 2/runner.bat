@@ -1,2 +1,2 @@
-node movieTheater.js < input1.txt
+node theReconstructingArrays.js < input1.txt
 cmd /k echo "Finished"
