@@ -1,0 +1,81 @@
+Enemy Tanks (100 Marks)
+The country border is always a sensitive place full of tension. The Ukraine-Russia war is an example of it. A country has to be even more on toes when they have a neighboring country whose primary occupation is terrorism. The soldiers are patrolling the border day and night.
+
+
+
+In the regular activity, Captain Manoj Kumar Pandey along with his team was patrolling the border. He had an instinct that there was something wrong. His team spent hours on the border but there was no activity so he advised his team to go back. But for some reason, he could not leave the position. He then made a cover in such a way that he was not visible from the other side of the border. After the long break, he saw a movement from the other side. There were N numbers of different enemy tanks determined to cross the border. It was clear to the Captain that the war had begun.
+
+
+Captain contacted the base and alerted them about the situation. He ordered them to safeguard their equipment and get ready. He cannot call the reinforcements as they will get noticed and the enemy tanks will start firing. He decided to destroy the maximum enemy tanks on his own so that the reinforcements can get a cover and the enemy gets destabilized. There are a B number of bombs with the Captain. He decided that he will throw only one bomb on a particular tank so that the enemy could not figure out his position and thinks there are large numbers of soldiers present.
+
+
+Captain has an advanced gadget with him .With the use of gadget, he can figure out the current Health of a tank (H) and the health of the tank after the bombing on it (BH). Apart from the bombs and gadget, he has other ammunition with him which has a strength S. He wants to destroy as many enemy tanks as possible. Since he is busy following the tanks and also making plans for the attack, he needs your help in determining the maximum number of tanks he can destroy. Once he gets the number he will figure out which tanks to bomb.
+
+
+Example:
+
+Consider there are 5 tanks. N = 5.
+
+
+
+
+
+
+The number of Bombs with Captain, B = 2 and strength of the ammunition he has (S) = 7
+
+
+
+
+Current Health of the tanks and the Health of the tanks after the bombing on them is given below.
+
+
+
+
+
+Captain should bomb Tank 3 and Tank 5. This will help him to damage the tanks and with the rest of the ammunition strength (S), he would be able to take down 3 enemy tanks.
+
+
+
+
+
+Help Captain destroy the maximum tanks and make cover for the reinforcements.
+
+
+
+Input Format
+The first line of input consists of two space-separated integers, B and S, representing the number of bombs and the strength of the ammunition with Captain respectively.
+The second line of input consists of an integer, N, number of tanks.
+Next N lines each consists of two space-separated integers, H and BH, where the ith line represents the current health of the ith tank and the health of the ith tank after the bombing on it respectively.
+
+
+Constraints
+1<= S <=10^15
+1<= N <=100000
+1<= B <=N
+1<= H <=10^9
+1<= BH <=H
+
+
+Output Format
+Print the maximum number of enemy tanks that can be destroyed by Captain.
+
+Sample TestCase 1
+Input
+2 7
+5
+5 4
+3 2
+6 2
+2 1
+8 4
+Output
+3
+Explanation
+As explained in the example.
+
+Time Limit(X):
+2.00 sec(s) for each input.
+Memory Limit:
+512 MB
+Source Limit:
+100 KB
