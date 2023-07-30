@@ -1,0 +1,110 @@
+Free Tickets (100 Marks)
+Once in a while, there comes movies for which the people go crazy. It is such a crazy time. The
+
+two movies - Barbie and Oppenheimer are breaking the records of sales. The ticket prices are really high and even then the shows are going housefull. In fact, cinema houses are scheduling the shows in the midnight and early morning to meet the demand. Looking at the craze, Mr. X has created a game for the fans where they have a chance to win free tickets for the movie of their choice.
+
+
+Game:
+
+There is a N*M matrix where each cell of the matrix is represented by either F (Flag) or B (Barbie) or O (Oppenheimer).
+
+
+How To WIN?
+
+A participant will win the game by fetching all the flags in the matrix.
+
+
+Rules:
+
+A participant present at cell (i, j) can move in any of the cells: (i-1, j), (i+1, j). (i, j+1), (i, j-1) i.e., left, right, top and down.
+
+If a participant moves to a cell marked with B, he/she will fall in a pit and to get back in the game they will have to pay one coin.
+
+If a participant moves to a cell marked with O, there will be a blast and the participant will be eliminated.
+
+The cells marked with F consist of the flag. These are the safe places in the matrix and can be visited by the participant without any restriction.
+
+To start the game, a participant can choose any cell of his/her choice.
+
+
+The game can be played in pairs where one person can guide the other to move to a particular cell. Moreover, to help the participants, the map of the matrix is shown at the start so that they can plan a strategy and win the game.
+
+
+Olive is really excited about the game and wants to win it to get the free tickets. But her partner, Popeye, has gone to far lands for some important work. Olive is asking you for help to win the game. She is determined to play the game optimally. When the map is shown, she will remember the cells she needs to move to fetch all the flags. She needs your help to determine the minimum number of coins she would need to get back in the game if she falls in the Barbie pit. Help Olive win the game.
+
+
+Example:
+
+Consider the given matrix.
+
+
+
+
+
+To fetch all the flags with the minimum number of coins possible, Olive should follow the path as below:
+
+
+
+
+
+
+PATH:
+
+
+(1, 1, F) -> (1, 2, B) -> (1, 3, F) -> (1, 4, F) -> (2, 4, F) -> (3, 4, F) -> (4, 4, B) -> (5, 4, B) -> (5, 5, B) -> (6, 5, F)
+
+
+Description of the path: (row_number, column_number, character at cell (i, j) where i is the row number and j is the column number)
+
+
+Following the path, Olive would fall in the 4 Barbie pits located at cells:
+
+(1, 2)
+
+(4, 4)
+
+(5, 4)
+
+(5, 5)
+
+
+To get out of it, she would require 4 coins. This is the most optimal path with minimum number of coins required.
+
+
+Note: She could have started with cell (6, 5) and tracked back to the cell (1, 1). The path and minimum number of coins remain the same.
+
+Input Format
+The first line of input consists of two space-separated integers, N and M, representing the number of rows and columns of the matrix.
+
+Next N rows each consist of M characters. The character can be F or B or O only.
+
+Constraints
+1<= N, M <=50
+
+1<= F <=51
+
+
+
+Output Format
+Print the minimum number of coins Olive needs to fetch all the flags and win the game. If it is not possible for Olive to win the game, print -1.
+
+Sample TestCase 1
+Input
+6 5
+FBFFO
+OBBFO
+OOBFO
+OOBBO
+BBBBB
+OOOOF
+Output
+4
+Explanation
+As explained in the example.
+
+Time Limit(X):
+2.00 sec(s) for each input.
+Memory Limit:
+512 MB
+Source Limit:
+100 KB

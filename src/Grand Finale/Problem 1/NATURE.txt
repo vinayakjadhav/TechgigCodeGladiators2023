@@ -1,0 +1,121 @@
+NATURE (100 Marks)
+Humans have been destroying nature for a long time now. The course of rivers are changed, forests are destroyed, mountains are cut and buildings are constructed in the hilly areas. As a result, there is an imbalance in nature and it gets difficult for humans when nature takes matters in hand. There is loss of life and property and what not. The recent heavy rains and floods are an example of it. Roads, bridges, buildings and cars washed away in floods. Hundreds of people are injured and are fighting for life, trying to recover from this devastation.
+
+
+To help out the distressed people, N camps have been set up by the NDRF team, the military and the local police. Each camp is assigned an integer from 1 to N (inclusive). These camps are the places where the teams reside, have equipment, necessary things and much more. There are T bidirectional tracks between these camps and any camp is reachable from any camp. The length of the track between two tracks is present along the track and is represented by L. A pair of camps is said to be directly accessible if there is a direct track between the two. Out of these N, there are R relief camps which are big in size to adhere to the injured people.
+
+
+Doctors are out in the field and providing help as much as possible. The team of doctors have to leave their camp in the morning, visit each relief camp everyday and come back to their own camp in the evening time. The problem is that they are not able to figure out which camp they should reside in, such that they had to travel the minimum distance. The team can reside in any camp except the relief camp. You have to help the team to figure out the optimal camp for them by figuring out the minimum distance they would be covering everyday.
+
+
+Example:
+
+Number of camps, N = 6
+
+Number of tracks between camps, T = 7
+
+Number of relief camps = 2
+
+Relief camps = [ 4, 6 ]
+
+
+Consider the given graph as the pictorial representation.
+
+
+
+
+
+Let us consider each camp except the relief camp as the base camp for the team of doctors and find the distance needed to be traveled by the team.
+
+
+CAMP 1: The team would follow the path as below:
+
+
+
+
+
+PATH: CAMP 1 -> CAMP 2 -> CAMP 6 -> CAMP 4 -> CAMP 6 -> CAMP2 -> CAMP 1
+
+
+TOTAL DISTANCE TRAVELED = 2 + 2 + 3 + 3 + 2 + 2 = 14
+
+
+
+CAMP 2: The team would follow the path as below:
+
+
+
+
+
+PATH: CAMP 2 -> CAMP 6 -> CAMP 4 ->CAMP 6 -> CAMP 2
+
+
+TOTAL DISTANCE TRAVELED = 2 + 3 + 3 + 2 = 10
+
+
+
+CAMP 3: The team would follow the path as below:
+
+
+
+
+PATH: CAMP 3 -> CAMP 4 -> CAMP 6 -> CAMP 4 -> CAMP 3
+
+
+TOTAL DISTANCE TRAVELED: 1 + 3 + 3 + 1 = 8 (MINIMUM DISTANCE)
+
+
+
+CAMP 5: The team would the path as below:
+
+
+
+
+PATH: CAMP 5 -> CAMP 6 -> CAMP 4 -> CAMP 6 -> CAMP 5
+
+
+TOTAL DISTANCE TRAVELED = 8 + 3 + 3 + 8 = 22
+
+
+It is clear that CAMP 3 is the most ideal camp for the team of the doctors. The minimum distance team will travel = 8
+
+Input Format
+The first line of input consists of two space-separated integers, N and T, representing the number of camps and the number of tracks respectively.
+The second line of input consists of an integer, R, number of relief camps.
+The third line of input consists of an R space-separated integers, representing the relief camps.
+Next N lines each consists of three space-separated integers, Si, Di, Li, representing the source camp, destination camp and the length of the track between the pair respectively.
+
+
+Constraints
+1<= N <=10000
+1<= T <=50000
+1<= L <=10000
+1<= R <=6
+
+
+Output Format
+Print the minimum distance that needs to be traveled by the team of doctors.
+
+Sample TestCase 1
+Input
+6 7
+2
+4 6
+1 2 2
+1 5 4
+2 3 5
+2 6 2
+4 3 1
+5 6 8
+6 4 3
+Output
+8
+Explanation
+As explained in the example.
+
+Time Limit(X):
+2.00 sec(s) for each input.
+Memory Limit:
+512 MB
+Source Limit:
+100 KB

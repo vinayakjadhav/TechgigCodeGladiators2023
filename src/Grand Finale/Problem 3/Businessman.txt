@@ -1,0 +1,195 @@
+Businessman (100 Marks)
+Business is all about profits. In simple words, you need to create or buy the item at a low price and sell it at a higher price to be profitable. The price at which the item is bought or created is known as the Cost Price (CP). The price at which the item is sold is known as the Selling Price (SP).
+
+
+Mr. X is a wise businessman living in a small town. He generally goes to big cities to buy the items and then, sells them in his hometown at a higher price. He keeps a track of the sale markets so that he can buy the items at a cheap price and earn more profits. He is aware that a sale market is organized in the Pragati Maidan. The ground is big so the organizing committee has created tracks connecting the stalls. There are N number of stalls which are connected by N-1 tracks.
+
+
+Mr. X has gone through the whole market and created a map of his own. He has marked each stall as an integer from 1 to N. He also has made the list of the tracks in the map which indicates a direct track between the two stalls. All the stalls are reachable from one another by some combinations of the tracks. He has picked the item at each stall to buy. He knows the cost price(CP) of the items and the selling price(SP) at which he will be able to sell that item. He has a certain amount of money (A) with him to buy the different items. He wants to buy the items which he can sell for the maximum. He was in the market for a long time and is tired now. So, he has decided to buy from each shop which will fall in his path between the two major nodes: Source (S) and Destination (D).
+
+
+He needs your help in determining the maximum selling price he can achieve by following any path. This will ensure he earns the maximum profit by following the path. It is possible that the selling price of a few items is 0 as the item will not sell in the hometown of Mr.X but he can still buy it if it falls in the path of maximum selling price.
+
+
+Example:
+
+The amount of money with Mr. X, A = 10
+
+Number of Stalls, N = 8
+
+
+Consider the map of the sale market as per Mr. X as below.
+
+
+
+
+
+
+Mr. X should start from Stall 2 and move towards Stall 8 or vice-versa as below.
+
+
+
+
+
+Following events will happen along the path.
+
+
+PATH: STALL 2 -> STALL 1 -> STALL 3 -> STALL 8
+
+
+Initially,
+
+Amount of Money, A = 10
+
+Total Selling Price = 0
+
+
+PATH: STALL 2 -> STALL 1 -> STALL 3 -> STALL 8
+
+
+Activity at Stall 2:
+
+Mr. X buys the item at CP = 3.
+
+Amount left = 10 - 3 = 7
+
+Total Selling Price = 2
+
+
+PATH: STALL 2 -> STALL 1 -> STALL 3 -> STALL 8
+
+
+Activity at Stall 1:
+
+Mr. X buys the item at CP = 2.
+
+Amount left = 7 - 2 = 5
+
+Total Selling Price = 2 + 1 = 3
+
+
+PATH: STALL 2 -> STALL 1 -> STALL 3 -> STALL 8
+
+
+Activity at Stall 3:
+
+Mr. X buys the item at CP = 3
+
+Amount left = 5 - 2 = 3
+
+Total Selling Price = 3 + 5 = 8
+
+
+PATH: STALL 2 -> STALL 1 -> STALL 3 -> STALL 8
+
+
+Activity at Stall 8:
+
+Mr. X buys the item at CP = 3
+
+Amount left = 3 - 3 = 0
+
+Total Selling Price = 8 + 10 = 18
+
+
+Maximum Total Selling Price achieved by Mr. X = 18 and he left with no more money.
+
+
+Can you guide Mr. X to achieve the maximum selling price and thus, in turn, earn the maximum profit?
+
+
+
+Input Format
+The first line of input consists of a number of test cases, T.
+
+The first line of each test case consists an integer, A, the initial amount of money with Mr.X
+
+The second line of each test case consists of an integer, N, representing the number of stalls in the market.
+
+The third line of each test case consists of N space-separated integers, CP, representing the cost price of the items at the N shops where the ith integer represents cost price of item at the ith shop.
+
+The fourth line of each test case consists of N space-separated integers, SP, representing the selling price of the items at which Mr.X can sell in his town where the ith integer represents selling price of the ith item.
+
+Next N-1 lines follow for each test case where each line consists of two space-separated integers, S and D, which indicates the direct track between the stall S and stall D.
+
+
+
+Constraints
+1<= T <=6
+
+1<= N <=3000
+
+1<= A <=3000
+
+1<= CP <=3000
+
+0<= SP <=3000
+
+1<= S, D <=N
+
+
+
+
+Output Format
+For each test case, print the maximum selling price that can be achieved by Mr.X.
+
+Sample TestCase 1
+Input
+2
+10
+8
+2 3 2 3 3 2 3 3
+1 2 5 1 1 2 4 10
+1 2
+1 3
+2 4
+2 5
+3 8
+4 7
+5 6
+5
+5
+2 3 1 2 2
+5 6 1 2 2
+1 2
+2 3
+2 5
+3 4
+Output
+18
+11
+Explanation
+Test Case 1: As explained in the example
+
+
+Test Case 2:
+
+Number of Stalls, N = 5
+
+Initial Amount of Money with Mr.X, A = 5
+
+
+The map of the sale market is provided below:
+
+
+
+
+
+
+Mr.X should visit Stall 1 and Stall 2 to fetch the maximum selling price and thus the maximum profit.
+
+
+
+
+
+
+Money spent by Mr.X = 5
+
+Total Selling Price Achieved = 5 + 6 = 11
+
+Time Limit(X):
+2.00 sec(s) for each input.
+Memory Limit:
+512 MB
+Source Limit:
+100 KB
